@@ -13,6 +13,7 @@ const getLatLong= (address,callback)=>{
                 Longitude : response.body.features[0].center[1],
                 location : response.body.features[0].place_name
             }
+            
             callback(undefined,data)
         }
     })

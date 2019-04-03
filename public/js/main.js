@@ -3,7 +3,7 @@ console.log('Loaded Client side Javascript')
 
 const fetchLoc = (location)=>{
     message1.textContent = 'Loading info for Location '+location+' Search!'
-    const queryString = 'http://localhost:3000/weather?address='+location
+    const queryString = '/weather?address='+location
     fetch(queryString).then((response)=>{
         response.json().then((data)=>{
             if(data.error){
